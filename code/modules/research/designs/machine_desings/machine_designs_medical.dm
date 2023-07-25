@@ -82,13 +82,13 @@
 	build_path = /obj/item/circuitboard/machine/chem_heater
 	category = list ("Medical Machinery")
 
-/datum/design/board/smoke_machine
+/*datum/design/board/smoke_machine
 	name = "Machine Design (Smoke Machine)"
 	desc = "The circuit board for a smoke machine."
 	id = "smoke_machine"
 	//build_path = /obj/item/circuitboard/machine/smoke_machine
 	category = list ("Medical Machinery")
-	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_ENGINEERING
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_ENGINEERING*/
 
 /datum/design/board/clonecontrol
 	name = "Computer Design (Cloning Machine Console)"
