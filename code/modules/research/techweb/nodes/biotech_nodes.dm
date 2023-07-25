@@ -14,7 +14,7 @@
 	display_name = "Advanced Biotechnology"
 	description = "Advanced Biotechnology"
 	prereq_ids = list("biotech")
-	design_ids = list("crewpinpointer", "smoke_machine", "plasmarefiller", "limbgrower", "meta_beaker", "healthanalyzer_advanced", "harvester", "holobarrier_med", "defibrillator_compact", "pHmeter", "containmentbodybag")
+	design_ids = list("crewpinpointer", "plasmarefiller", "limbgrower", "meta_beaker", "healthanalyzer_advanced", "harvester", "holobarrier_med", "defibrillator_compact", "pHmeter", "containmentbodybag")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	alt_skill = SKILL_DOCTOR
 	skill_level_needed = REGULAR_CHECK

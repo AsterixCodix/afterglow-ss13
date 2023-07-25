@@ -28,7 +28,7 @@
 	display_name = "Advanced Biotechnology"
 	description = "Advanced Biotechnology"
 	prereq_ids = list("biotech")
-	design_ids = list("piercesyringe", "smoke_machine", "limbgrower", "defibrillator", "meta_beaker", "virusmaker"/*, "medbeam"*/)
+	design_ids = list("piercesyringe", "limbgrower", "defibrillator", "meta_beaker", "virusmaker"/*, "medbeam"*/)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 	alt_skill = SKILL_DOCTOR
