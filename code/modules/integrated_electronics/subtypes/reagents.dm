@@ -545,7 +545,7 @@
 //Hippie Ported Code--------------------------------------------------------------------------------------------------------
 
 
-/obj/item/integrated_circuit/reagent/smoke
+/*/obj/item/integrated_circuit/reagent/smoke
 	name = "smoke generator"
 	desc = "Unlike most electronics, creating smoke is completely intentional."
 	icon_state = "smoke"
@@ -600,7 +600,7 @@
 			activate_pin(2)
 		if(3)
 			set_pin_data(IC_OUTPUT, 2, WEAKREF(src))
-			push_data()
+			push_data()*/
 
 // - Integrated extinguisher - //
 /obj/item/integrated_circuit/reagent/extinguisher
