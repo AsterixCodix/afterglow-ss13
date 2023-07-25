@@ -86,7 +86,7 @@
 	name = "Machine Design (Smoke Machine)"
 	desc = "The circuit board for a smoke machine."
 	id = "smoke_machine"
-	build_path = /obj/item/circuitboard/machine/smoke_machine
+	//build_path = /obj/item/circuitboard/machine/smoke_machine
 	category = list ("Medical Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_ENGINEERING
 
