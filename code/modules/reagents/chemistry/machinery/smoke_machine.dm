@@ -1,6 +1,6 @@
 #define REAGENTS_BASE_VOLUME 100 // actual volume is REAGENTS_BASE_VOLUME plus REAGENTS_BASE_VOLUME * rating for each matterbin
 
-/obj/machinery/smoke_machine
+/*obj/machinery/smoke_machine
 	name = "smoke machine"
 	desc = "A machine with a centrifuge installed into it. It produces smoke with any reagents you put into the machine."
 	icon = 'icons/obj/chemical.dmi'
@@ -155,4 +155,4 @@
 			screen = params["screen"]
 			. = TRUE
 
-#undef REAGENTS_BASE_VOLUME
+#undef REAGENTS_BASE_VOLUME*/
