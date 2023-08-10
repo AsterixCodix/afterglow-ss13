@@ -597,6 +597,31 @@ GLOBAL_LIST_INIT(desolate_plant_spawn_list, list(
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 //	step_sounds = list("human" = "erikafootsteps")
 
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark
+	name = "broken sidewalk"
+	icon_state = "horizontalborder_dark"
+
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark/end
+	icon_state = "verticalborder_dark"
+
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark/corner
+	icon_state = "outermaincornerinner_dark"
+
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark/corner/outer
+	icon_state = "outermaincornerouter_dark"
+
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark/corner/outer/alt
+	icon_state = "outercorner_dark"
+
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark/corner/outer/misc
+	icon_state = "outercornermisc_dark"
+
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark/edge
+	icon_state = "outerpavement_dark"
+
+/turf/open/indestructible/ground/outside/sidewalkdirt/dark/edge/corner
+	icon_state = "outerpavementcorner_dark"
+
 //Obsolete but used in yucky Pahrump
 /turf/open/indestructible/ground/outside/graveldirt
 	name = "gravel"
