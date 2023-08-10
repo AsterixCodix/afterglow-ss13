@@ -292,6 +292,38 @@
 	item_state = "metalhelmet_r"
 	armor_tokens = list(ARMOR_MODIFIER_UP_BULLET_T1, ARMOR_MODIFIER_UP_LASER_T2, ARMOR_MODIFIER_UP_MELEE_T3)
 
+//Mutie
+
+/obj/item/clothing/head/helmet/f13/mutie
+	name = "mutant aviator helmet"
+	desc = "A leather hat worn by Super Mutants, with a large set of goggles attached to the forehead."
+	icon_state = "muite_aviator"
+	item_state = "muite_aviator"
+	armor_tokens = list(ARMOR_MODIFIER_UP_LASER_T2, ARMOR_MODIFIER_UP_MELEE_T2)
+	species_restricted = list("exclude","Human","Ghoul")
+
+/obj/item/clothing/head/helmet/knight/f13/metal/mutie
+	name = "bladed mutant helmet"
+	desc = "A metal helmet forged by Super Mutants, with a large blade on the forehead."
+	icon_state = "mutie_bladed_helmet"
+	item_state = "mutie_bladed_helmet"
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
+	armor_tokens = list(ARMOR_MODIFIER_UP_LASER_T1, ARMOR_MODIFIER_UP_MELEE_T1)
+	species_restricted = list("exclude","Human","Ghoul")
+
+/obj/item/clothing/head/helmet/knight/f13/metal/mutie/knight
+	name = "mutant knight helmet"
+	desc = "A metal helmet forged by Super Mutants, reminisient of the helmets worn by the Knights of old."
+	icon_state = "mutie_knight"
+	item_state = "mutie_knight"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+
+/obj/item/clothing/head/helmet/knight/f13/metal/mutie/knight/crown
+	name = "mutant crown helmet"
+	desc = "A metal helmet forged by Super Mutants, reminisient of the helmets worn by the Knights of old."
+	icon_state = "mutie_crown"
+	item_state = "mutie_crown"
+
 //////////
 //LEGION//
 //////////
@@ -420,7 +452,7 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	armor = ARMOR_VALUE_HEAVY
 
-/obj/item/clothing/head/helmet/f13/legion/palacent
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/palacent
 	name = "legion centurion paladin-slayer helmet"
 	desc = "The once-marvelous helmet of the T-45d power armor set, repurposed by the Legion into a symbol of its might. It has a large plume of red horse hair across the top of it going horizontally, donoting the rank of Centurion."
 	lefthand_file = ""
@@ -535,6 +567,14 @@
 	icon_state = "ncr_helmet_mp"
 	item_state = "ncr_helmet_mp"
 
+/obj/item/clothing/head/helmet/f13/ncr/mutie
+	name = "NCR Mutie Helmet"
+	desc = "A Mutie issue NCR pith helmet made out of scrap and covered over with leather."
+	icon_state = "mutie_ncr_helmet"
+	item_state = "mutie_ncr_helmet"
+	unique_reskin = list()
+	species_restricted = list("exclude","Human","Ghoul")
+
 //Ranger
 //Yes, nearly all of these are not helmets - but this is because they ACT as helmets for balance-purposes.
 
@@ -556,6 +596,13 @@
 	item_state = "ncr_ranger_patrol"
 	armor = ARMOR_VALUE_MEDIUM
 
+/obj/item/clothing/head/f13/ncr/patrol/mutie
+	name = "NCR Mutant Ranger Hat"
+	desc = "An NCR Mutant Ranger hat, standard issue amongst all but the most elite Mutie rangers."
+	icon_state = "mutie_ncr_ranger"
+	item_state = "mutie_ncr_ranger"
+	species_restricted = list("exclude","Human","Ghoul")
+
 /obj/item/clothing/head/helmet/f13/ncr/veteran
 	name = "NCR veteran ranger combat helmet"
 	desc = "An old combat helmet, out of use around the time of the war."
@@ -571,6 +618,13 @@
 	glass_colour_type = /datum/client_colour/glass_colour/red
 	lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
 	darkness_view = 24
+
+/obj/item/clothing/head/helmet/f13/ncr/veteran/mutie
+	name = "NCR Mutant Veteran Ranger Combat Helmet"
+	desc = "An old combat helmet, out of use around the time of the war. Slightly altered to better fit a Super Mutant."
+	icon_state = "mutie_vet_ranger"
+	item_state = "mutie_vet_ranger"
+	species_restricted = list("exclude","Human","Ghoul")
 
 ///////
 /*BOS*/
@@ -757,33 +811,26 @@
 	slowdown = ARMOR_SLOWDOWN_NONE * ARMOR_SLOWDOWN_GLOBAL_MULT
 	armor = ARMOR_VALUE_SALVAGE
 
-// T-45B
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
-	name = "salvaged T-45d helmet"
-	desc = "It's a salvaged T-45d power armor helmet."
-	icon_state = "t45bhelmet"
-	item_state = "t45bhelmet"
-
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/raider
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/raider
 	name = "raider T-45d power helmet"
 	desc = "a raider's attempt to duplicate a power armor helmet. The result is a fuzed mass of metal and ceramic that nonetheless provides protection"
 	icon_state = "raiderpa_helm"
 	item_state = "raiderpa_helm"
 
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/ncr
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/ncr
 	name = "ncr salvaged T-45d helmet"
 	desc = "It's an NCR salvaged T-45d power armor helmet, better repaired than regular salvaged PA, and decorated with the NCR flag and other markings for an NCR Heavy Trooper."
-	icon_state = "t45bhelmet_ncr"
-	item_state = "t45bhelmet_ncr"
+	icon_state = "t45dhelmet_ncr"
+	item_state = "t45dhelmet_ncr"
 
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/hotrod
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/hotrod
 	name = "hotrod T-45d power helmet"
 	desc = "This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm."
 	icon_state = "t45hotrod_helm"
 	item_state = "t45hotrod_helm"
 	armor_tokens = list(ARMOR_MODIFIER_UP_FIRE_T2)
 
-/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/tribal
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/tribal
 	name = "tribal t-45d headdress"
 	desc = "A salvaged T-45d powered armor, with the servos removed and a feathered headdress. Certain bits of plating have been stripped out to retain more freedom of movement."
 	icon_state = "tribal"
@@ -791,6 +838,20 @@
 	armor_tokens = list(ARMOR_MODIFIER_DOWN_MELEE_T2, ARMOR_MODIFIER_DOWN_BULLET_T2, ARMOR_MODIFIER_DOWN_LASER_T2)
 	slowdown = 0
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
+
+// Mutie Salvage
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/mutie
+	name = "large power armour helmet"
+	desc = "It's a salvaged power armour helmet... That could've been made from any functional suit."
+	icon_state = "mutie_power_armor_helmet"
+	item_state = "mutie_power_armor_helmet"
+	species_restricted = list("exclude","Human","Ghoul")
+
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b/mutie/ncr
+	name = "large NCR power armour helmet"
+	desc = "It's a salvaged power armour helmet... That could've been made from any functional suit. This one sports the trappings of an NCR Heavy Trooper."
+	icon_state = "mutie_ncr_power_helmet"
+	item_state = "mutie_ncr_power_helmet"
 
 // T-45D
 /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d
@@ -814,6 +875,22 @@
 	icon_state = "advanced"
 	item_state = "advanced"
 	armor_tokens = list(ARMOR_MODIFIER_UP_MELEE_T3, ARMOR_MODIFIER_UP_BULLET_T3, ARMOR_MODIFIER_UP_LASER_T3)
+
+// Legion T-45D
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45d/legion
+	name = "salvaged parma T-45d helmet"
+	desc = "It's a reforged T-45d power armor helmet worn by the Legion. The faceplate has been removed and red paint has been applied on the forehead."
+	icon_state = "parmahelm"
+	item_state = "parmahelm"
+	armor_tokens = list(ARMOR_MODIFIER_DOWN_MELEE_T1, ARMOR_MODIFIER_DOWN_BULLET_T1, ARMOR_MODIFIER_DOWN_LASER_T1)
+
+// Legion T-51B
+/obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t51b/legion
+	name = "salvaged scutum T-51b helmet"
+	desc = "It's a reforged T-51b power armor helmet worn by the Legion. The mouthplate has been removed and gold wreaths have been inlaid on its front."
+	icon_state = "scutumhelm"
+	item_state = "scutumhelm"
+	armor_tokens = list(ARMOR_MODIFIER_UP_LASER_T1)
 
 
 /////////////////
@@ -875,6 +952,9 @@
 		return ..()
 	if (!HAS_TRAIT(H, TRAIT_PA_WEAR) && slot == SLOT_HEAD && requires_training)
 		to_chat(user, span_warning("You don't have the proper training to operate the power armor!"))
+		return 0
+	if (HAS_TRAIT(H, TRAIT_MARS_TEACH) && slot == SLOT_HEAD && requires_training)
+		to_chat(user, span_warning("You would make Mars shed tears of fire by wearing the armor of the weak!"))
 		return 0
 	if(slot == SLOT_HEAD)
 		return ..()
@@ -960,13 +1040,6 @@
 			return "<span class='notice'>The cover is <i>screwed</i> open with connection ports <i>bolted down</i>.</span>"
 		if(2)
 			return "<span class='warning'>The connections ports have been <i>unanchored</i> and only <i>wires</i> remain.</span>"
-
-/obj/item/clothing/head/helmet/f13/power_armor/t45b
-	name = "T-45d helmet"
-	desc = "It's a T-45d power armor helmet."
-	icon_state = "t45bhelmet"
-	item_state = "t45bhelmet"
-	salvaged_type = /obj/item/clothing/head/helmet/f13/heavy/salvaged_pa/t45b
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45d
 	name = "T-45d power helmet"

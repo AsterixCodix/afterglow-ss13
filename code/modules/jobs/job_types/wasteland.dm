@@ -12,8 +12,8 @@ Raider
 	head_announce = list("Security")
 	faction = FACTION_WASTELAND
 	social_faction = FACTION_RAIDERS
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 10
+	spawn_positions = 10
 	description = "You are an Outlaw - the choice of why is up to you. You are responsible for making the wasteland unsafe and today is another day to antagonize it. You may be varied in your approaches, but you must have motives that are realistic for your job."
 	supervisors = "your conscious if you have one"
 	selection_color = "#df80af"
@@ -21,6 +21,7 @@ Raider
 	exp_type = EXP_TYPE_WASTELAND
 
 	outfit = /datum/outfit/job/wasteland/f13raider
+	smutant_outfit = /datum/outfit/smutant/wastes/raider
 
 	access = list()
 	minimal_access = list()
@@ -44,15 +45,24 @@ Raider
 	/datum/outfit/loadout/raider_yankee,
 	/datum/outfit/loadout/raider_blast,
 	/datum/outfit/loadout/raider_badlands,
-	// /datum/outfit/loadout/raider_smith,
+	///datum/outfit/loadout/raider_smith,
 	/datum/outfit/loadout/raider_vault,
 	/datum/outfit/loadout/raider_ncr,
 	/datum/outfit/loadout/raider_legion,
 	/datum/outfit/loadout/raider_bos,
 	/datum/outfit/loadout/quack_doctor,
-	/datum/outfit/loadout/powder_ganger
+	/datum/outfit/loadout/powder_ganger,
+	/datum/outfit/loadout/whitelegsmelee,
+	/datum/outfit/loadout/whitelegsshaman,
+	/datum/outfit/loadout/eightiesmelee,
+	/datum/outfit/loadout/eightiesranged,
+	/datum/outfit/loadout/eightiesshaman,
 	)
 
+/datum/outfit/smutant/wastes/raider
+	uniform = /obj/item/clothing/under/f13/mutie/cloth
+	suit = /obj/item/clothing/suit/armor/light/mutie
+	head = /obj/item/clothing/head/helmet/knight/f13/metal/mutie
 
 /datum/outfit/job/wasteland/f13raider
 	name = "Outlaw"
@@ -183,6 +193,66 @@ Raider
 		/obj/item/bottlecap_mine = 1,
 		/obj/item/grenade/homemade/coffeepotbomb = 2,
 		)
+
+/datum/outfit/loadout/whitelegsmelee
+	name = "White Leg Warrior"
+	suit = /obj/item/clothing/suit/armor/medium/tribal/whitelegs
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/whitelegs = 1,
+		/obj/item/clothing/under/f13/female/whitelegs = 1,
+		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
+		/obj/item/twohanded/spear/bonespear = 1,
+	)
+
+/datum/outfit/loadout/whitelegsshaman
+	name = "White Legs Arm-Makers"
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/whitelegs = 1,
+		/obj/item/clothing/under/f13/female/whitelegs = 1,
+		///obj/item/twohanded/fireaxe = 1,
+		///obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
+		/obj/item/book/granter/crafting_recipe/tribal/whitelegs = 1
+	)
+
+//Eighties
+/datum/outfit/loadout/eightiesmelee
+	name = "Eighties Path-Maker"
+	suit = /obj/item/clothing/suit/armor/medium/tribal/eighties
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/eighties = 1,
+		/obj/item/clothing/under/f13/female/eighties = 1,
+		///obj/item/gun/ballistic/shotgun/trench = 1,
+		///obj/item/ammo_box/shotgun/buck = 2,
+		/obj/item/reagent_containers/pill/healingpowder = 2,
+		/obj/item/reagent_containers/pill/patch/turbo = 2,
+		/obj/item/reagent_containers/pill/patch/jet = 2
+	)
+
+/datum/outfit/loadout/eightiesranged
+	name = "Eighties Road-Warrior"
+	suit = /obj/item/clothing/suit/armor/medium/tribal/eighties
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/eighties = 1,
+		/obj/item/clothing/under/f13/female/eighties = 1,
+		///obj/item/gun/ballistic/revolver/single_shotgun = 1,
+		///obj/item/ammo_box/shotgun/buck = 1,
+		///obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
+		///obj/item/ammo_box/magazine/greasegun = 2,
+		/obj/item/reagent_containers/pill/healingpowder = 2
+	)
+
+/datum/outfit/loadout/eightiesshaman
+	name = "Eighties Lay-Mechanic"
+	suit = /obj/item/clothing/suit/armor/medium/tribal/eighties
+	backpack_contents = list(
+		/obj/item/clothing/under/f13/eighties = 1,
+		/obj/item/clothing/under/f13/female/eighties = 1,
+		///obj/item/gun/ballistic/revolver/single_shotgun = 1,
+		///obj/item/ammo_box/shotgun/slug = 1,
+		/obj/item/reagent_containers/pill/healingpowder = 2,
+		/obj/item/storage/belt/utility/full = 1,
+		/obj/item/book/granter/crafting_recipe/tribal/eighties = 1
+	)
 
 /datum/outfit/loadout/raider_badlands
 	name = "Fiend"
@@ -841,6 +911,7 @@ Raider
 	selection_color = "#dddddd"
 
 	outfit = /datum/outfit/job/wasteland/f13wastelander
+	smutant_outfit = /datum/outfit/smutant/wastes
 
 	access = list()		//we can expand on this and make alterations as people suggest different loadouts
 	minimal_access = list()
@@ -885,6 +956,13 @@ Raider
 //	/datum/outfit/loadout/ncrcitizen,
 //	/datum/outfit/loadout/legioncivilian,
 //	/datum/outfit/loadout/wastelander_desert_ranger)
+
+/datum/outfit/smutant/wastes
+	uniform = /obj/item/clothing/under/f13/mutie
+	gloves = /obj/item/clothing/gloves/f13/mutie
+	shoes = /obj/item/clothing/shoes/f13/mutie
+	suit = /obj/item/clothing/suit/armor/medium/vest/breastplate/scrap/mutie
+	head = /obj/item/clothing/head/helmet/f13/mutie
 
 /datum/outfit/job/wasteland/f13wastelander
 	name = "Wastelander"
@@ -1767,11 +1845,6 @@ datum/job/wasteland/f13dendoctor
 	/datum/outfit/loadout/wayfarershaman,
 	/datum/outfit/loadout/shaman,
 	/datum/outfit/loadout/lostvillager,
-	/datum/outfit/loadout/whitelegsmelee,
-	/datum/outfit/loadout/whitelegsshaman,
-	/datum/outfit/loadout/eightiesmelee,
-	/datum/outfit/loadout/eightiesranged,
-	/datum/outfit/loadout/eightiesshaman,
 	/datum/outfit/loadout/rustwalkersscipher,
 	/datum/outfit/loadout/rustwalkersscrapper,
 	/datum/outfit/loadout/rustwalkersshaman,
@@ -1905,66 +1978,6 @@ datum/job/wasteland/f13dendoctor
 		/obj/item/reagent_containers/pill/healingpowder = 2,
 		/obj/item/book/granter/trait/tribaltraditions =1,
 		)
-
-/datum/outfit/loadout/whitelegsmelee
-	name = "White Leg Warrior"
-	suit = /obj/item/clothing/suit/armor/medium/tribal/whitelegs
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/whitelegs = 1,
-		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		/obj/item/reagent_containers/pill/patch/healpoultice = 1,
-		/obj/item/twohanded/spear/bonespear = 1,
-	)
-
-/datum/outfit/loadout/whitelegsshaman
-	name = "White Legs Arm-Makers"
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/whitelegs = 1,
-		/obj/item/clothing/under/f13/female/whitelegs = 1,
-		///obj/item/twohanded/fireaxe = 1,
-		///obj/item/gun/ballistic/automatic/pistol/ninemil = 1,
-		/obj/item/book/granter/crafting_recipe/tribal/whitelegs = 1
-	)
-
-//Eighties
-/datum/outfit/loadout/eightiesmelee
-	name = "Eighties Path-Maker"
-	suit = /obj/item/clothing/suit/armor/medium/tribal/eighties
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/eighties = 1,
-		/obj/item/clothing/under/f13/female/eighties = 1,
-		///obj/item/gun/ballistic/shotgun/trench = 1,
-		///obj/item/ammo_box/shotgun/buck = 2,
-		/obj/item/reagent_containers/pill/healingpowder = 2,
-		/obj/item/reagent_containers/pill/patch/turbo = 2,
-		/obj/item/reagent_containers/pill/patch/jet = 2
-	)
-
-/datum/outfit/loadout/eightiesranged
-	name = "Eighties Road-Warrior"
-	suit = /obj/item/clothing/suit/armor/medium/tribal/eighties
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/eighties = 1,
-		/obj/item/clothing/under/f13/female/eighties = 1,
-		///obj/item/gun/ballistic/revolver/single_shotgun = 1,
-		///obj/item/ammo_box/shotgun/buck = 1,
-		///obj/item/gun/ballistic/automatic/smg/greasegun/worn = 1,
-		///obj/item/ammo_box/magazine/greasegun = 2,
-		/obj/item/reagent_containers/pill/healingpowder = 2
-	)
-
-/datum/outfit/loadout/eightiesshaman
-	name = "Eighties Lay-Mechanic"
-	suit = /obj/item/clothing/suit/armor/medium/tribal/eighties
-	backpack_contents = list(
-		/obj/item/clothing/under/f13/eighties = 1,
-		/obj/item/clothing/under/f13/female/eighties = 1,
-		///obj/item/gun/ballistic/revolver/single_shotgun = 1,
-		///obj/item/ammo_box/shotgun/slug = 1,
-		/obj/item/reagent_containers/pill/healingpowder = 2,
-		/obj/item/storage/belt/utility/full = 1,
-		/obj/item/book/granter/crafting_recipe/tribal/eighties = 1
-	)
 
 //Wayfarers
 /datum/outfit/loadout/wayfarermelee
