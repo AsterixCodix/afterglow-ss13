@@ -125,6 +125,18 @@ GLOBAL_LIST_INIT(desolate_plant_spawn_list, list(
 /turf/open/indestructible/ground/outside/grass/dirtpath //change direction for different sides/corners
 	icon_state = "grass"
 
+/turf/open/indestructible/ground/outside/grass/edge
+	name = "Grass"
+	desc = "Some actual grass."
+	icon = 'icons/fallout/turfs/sidewalk.dmi'
+	icon_state = "grassfull"
+	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
+
+/turf/open/indestructible/ground/outside/grass/edge/corner //change direction for different corners
+	icon_state = "grass_dirtcorner"
+
+/turf/open/indestructible/ground/outside/grass/edge/dirtpath //change direction for different sides/corners
+	icon_state = "grass"
 
 //////////////
 // SAVANNAH //
@@ -311,6 +323,8 @@ GLOBAL_LIST_INIT(desolate_plant_spawn_list, list(
 
 // DARK DIRT - the legacy one
 /turf/open/indestructible/ground/outside/dirt/dark
+	icon = 'icons/fallout/turfs/dirt.dmi'
+	icon_state = "dirtfull_dark"
 
 /turf/open/indestructible/ground/outside/dirt/harsh
 	icon = 'icons/fallout/turfs/ground_harsh.dmi'
