@@ -22073,13 +22073,10 @@
 	},
 /area/f13/bunker/bunkernine)
 "qvn" = (
-/obj/structure/decoration/rag{
-	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
-	icon_state = "skulls";
-	name = "skulls"
-	},
-/turf/closed/wall/f13/ruins,
-/area/f13/tunnel)
+/obj/structure/barricade/bars,
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/indestructible/ground/inside/subway,
+/area/f13/building/sewers)
 "qwd" = (
 /obj/structure/simple_door/bunker/glass,
 /obj/effect/decal/cleanable/dirt,
@@ -22095,10 +22092,13 @@
 	},
 /area/f13/brotherhood/dorms)
 "qwJ" = (
-/obj/structure/barricade/bars,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/building/sewers)
+/obj/structure/decoration/rag{
+	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
+	icon_state = "skulls";
+	name = "skulls"
+	},
+/turf/closed/wall/f13/ruins,
+/area/f13/tunnel)
 "qwT" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
@@ -38469,7 +38469,7 @@ ciJ
 ciJ
 ciJ
 ciJ
-qwJ
+qvn
 pYX
 kON
 kON
@@ -51259,7 +51259,7 @@ bCE
 bCE
 bCE
 svm
-qvn
+qwJ
 cds
 ciJ
 bCE
