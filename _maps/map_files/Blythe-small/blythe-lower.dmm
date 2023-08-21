@@ -386,7 +386,10 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "aoB" = (
-/turf/open/floor/plating/asteroid/airless/cave,
+/obj/structure/ore_box,
+/turf/open/indestructible/ground/inside/mountain{
+	name = "rough stone"
+	},
 /area/f13/caves)
 "apf" = (
 /obj/structure/window/reinforced/spawner/north{
@@ -9762,8 +9765,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/yellow/whiteyellowfull,
 /area/f13/bunker/bunkerseven)
 "huI" = (
-/obj/structure/destructible/tribal_torch/lit,
-/turf/open/floor/plating/asteroid/airless/cave,
+/obj/structure/closet/cabinet/anchored,
+/obj/item/storage/belt/utility/mining/vendor,
+/obj/item/mining_scanner/prospector,
+/obj/item/storage/bag/ore,
+/obj/item/storage/bag/ore,
+/turf/open/indestructible/ground/inside/mountain{
+	name = "rough stone"
+	},
 /area/f13/caves)
 "huQ" = (
 /obj/effect/decal/cleanable/greenglow,
@@ -14444,8 +14453,15 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/brotherhood/medical)
 "kRa" = (
-/obj/structure/ore_box,
-/turf/open/floor/plating/asteroid/airless/cave,
+/obj/structure/rack,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/flashlight/flare/torch,
+/obj/item/flashlight/flare/torch,
+/turf/open/indestructible/ground/inside/mountain{
+	name = "rough stone"
+	},
 /area/f13/caves)
 "kRL" = (
 /obj/effect/landmark/start/f13/seniorscribe,
@@ -16220,13 +16236,9 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "mno" = (
-/obj/structure/rack,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/flashlight/flare/torch,
-/obj/item/flashlight/flare/torch,
-/turf/open/floor/plating/asteroid/airless/cave,
+/turf/open/indestructible/ground/inside/mountain{
+	name = "rough stone"
+	},
 /area/f13/caves)
 "mnB" = (
 /turf/open/floor/f13{
@@ -17806,8 +17818,10 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/brotherhood/operations)
 "nAc" = (
-/obj/structure/stairs/south,
-/turf/open/floor/plating/asteroid/airless/cave,
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/indestructible/ground/inside/mountain{
+	name = "rough stone"
+	},
 /area/f13/caves)
 "nAn" = (
 /obj/structure/junk/locker,
@@ -85402,9 +85416,9 @@ qnC
 qnC
 qnC
 qnC
-aoB
-aoB
-aoB
+qnC
+qnC
+qnC
 cds
 cds
 cds
@@ -85653,11 +85667,11 @@ qnC
 qnC
 qnC
 qnC
-mno
-aoB
-aoB
-aoB
-nAc
+qnC
+qnC
+qnC
+qnC
+qnC
 cds
 cds
 uOZ
@@ -85905,11 +85919,11 @@ qnC
 qnC
 qnC
 qnC
-kRa
-aoB
-huI
-aoB
-nAc
+qnC
+qnC
+qnC
+qnC
+qnC
 cds
 cds
 uOZ
@@ -86157,11 +86171,11 @@ qnC
 qnC
 qnC
 qnC
-kRa
-aoB
-aoB
-aoB
-nAc
+qnC
+qnC
+qnC
+qnC
+qnC
 cds
 cds
 uOZ
@@ -86409,9 +86423,9 @@ qnC
 qnC
 qnC
 cds
-aoB
-aoB
-aoB
+qnC
+qnC
+qnC
 cds
 cds
 cds
@@ -86661,11 +86675,11 @@ qnC
 qnC
 qnC
 cds
-aoB
-aoB
-aoB
-aoB
-aoB
+qnC
+qnC
+qnC
+qnC
+qnC
 cds
 cds
 uOZ
@@ -86914,11 +86928,11 @@ qnC
 uOZ
 cds
 cds
-aoB
-aoB
-aoB
-aoB
-aoB
+qnC
+qnC
+qnC
+qnC
+qnC
 cds
 uOZ
 uOZ
@@ -87167,10 +87181,10 @@ uOZ
 cds
 cds
 cds
-aoB
-aoB
-aoB
-aoB
+qnC
+qnC
+qnC
+qnC
 cds
 uOZ
 uOZ
@@ -93488,9 +93502,9 @@ uOZ
 uOZ
 uOZ
 uOZ
-uOZ
-uOZ
-uOZ
+mno
+mno
+nAc
 uOZ
 uOZ
 uOZ
@@ -93739,11 +93753,11 @@ uOZ
 uOZ
 uOZ
 uOZ
-uOZ
-uOZ
-uOZ
-uOZ
-uOZ
+mno
+mno
+mno
+mno
+kRa
 uOZ
 uOZ
 uOZ
@@ -93990,12 +94004,12 @@ uOZ
 uOZ
 uOZ
 uOZ
-uOZ
-uOZ
-uOZ
-uOZ
-uOZ
-uOZ
+aZB
+mno
+mno
+mno
+mno
+kRa
 uOZ
 uOZ
 uOZ
@@ -94242,12 +94256,12 @@ uOZ
 uOZ
 uOZ
 uOZ
-uOZ
-uOZ
-uOZ
-uOZ
-uOZ
-uOZ
+aZB
+mno
+mno
+mno
+mno
+aoB
 uOZ
 uOZ
 uOZ
@@ -94495,11 +94509,11 @@ uOZ
 uOZ
 uOZ
 uOZ
-uOZ
-uOZ
-uOZ
-uOZ
-uOZ
+huI
+mno
+mno
+mno
+aoB
 uOZ
 uOZ
 uOZ
@@ -94748,9 +94762,9 @@ uOZ
 uOZ
 uOZ
 uOZ
-uOZ
-uOZ
-uOZ
+mno
+mno
+nAc
 uOZ
 uOZ
 uOZ
