@@ -4122,6 +4122,10 @@
 	dir = 1
 	},
 /area/f13/building/hospital)
+"bUO" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/wood_common,
+/area/f13/legioncamp)
 "bUX" = (
 /obj/structure/sign/crosswalk,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -5204,6 +5208,10 @@
 	icon_state = "horizontaloutermain1"
 	},
 /area/f13/wasteland/town)
+"cuw" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/closed/wall/f13/tentwall,
+/area/f13/legioncamp)
 "cuD" = (
 /obj/structure/barricade/wooden,
 /turf/closed/indestructible/rock{
@@ -6237,6 +6245,12 @@
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"cTj" = (
+/obj/structure/stairs/east,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
+/area/f13/brotherhood/surface)
 "cTx" = (
 /obj/structure/spacevine,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -15691,6 +15705,10 @@
 	},
 /turf/open/floor/wood_common,
 /area/f13/ambientlighting/building/z)
+"hrd" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/closed/wall/mineral/wood,
+/area/f13/legioncamp)
 "hrh" = (
 /obj/structure/barricade/tentclothcorner,
 /turf/open/indestructible/ground/outside/sidewalkdirt/dark/end{
@@ -26573,6 +26591,11 @@
 	},
 /turf/open/floor/wood_worn,
 /area/f13/building)
+"mjS" = (
+/obj/machinery/power/apc/fusebox/east,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/wood_common,
+/area/f13/legioncamp)
 "mjV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
@@ -27839,6 +27862,11 @@
 	},
 /turf/open/floor/wood_common,
 /area/f13/ambientlighting/building/j)
+"mMT" = (
+/obj/machinery/smartfridge/drying_rack,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/wood_common,
+/area/f13/legioncamp)
 "mMW" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontalbottomborderbottom2"
@@ -27870,6 +27898,12 @@
 	},
 /turf/closed/wall/f13/wood/house,
 /area/f13/tunnel/khanfort)
+"mOf" = (
+/obj/structure/closet/crate/large,
+/obj/machinery/power/apc/fusebox/east,
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/floor/wood_common,
+/area/f13/legioncamp)
 "mOh" = (
 /obj/structure/table,
 /obj/item/clothing/neck/stethoscope,
@@ -28441,6 +28475,13 @@
 	icon_state = "housewood2"
 	},
 /area/f13/ambientlighting/building/p)
+"mZG" = (
+/obj/structure/rack,
+/obj/item/seeds/ambrosia/deus,
+/obj/item/seeds/ambrosia/deus,
+/obj/item/seeds/ambrosia,
+/turf/open/floor/wood_common,
+/area/f13/legioncamp)
 "mZO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -29600,6 +29641,13 @@
 "nDe" = (
 /mob/living/simple_animal/chicken,
 /turf/open/indestructible/ground/outside/dirt/dark,
+/area/f13/wasteland/legion)
+"nDp" = (
+/obj/machinery/power/port_gen/infinite/diesel{
+	name = "bio-diesel generator"
+	},
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/open/indestructible/ground/inside/mountain,
 /area/f13/wasteland/legion)
 "nDG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -35839,6 +35887,10 @@
 	dir = 8
 	},
 /area/f13/wasteland)
+"qvg" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/turf/closed/wall/f13/ruins,
+/area/f13/legioncamp)
 "qvr" = (
 /obj/structure/closet/crate/footlocker,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
@@ -46890,6 +46942,13 @@
 	icon_state = "common-broken3"
 	},
 /area/f13/legioncamp)
+"vEY" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/machinery/power/port_gen/infinite/diesel{
+	name = "bio-diesel generator"
+	},
+/turf/open/indestructible/ground/outside/grass,
+/area/f13/wasteland/legion)
 "vFg" = (
 /obj/machinery/light/fo13colored/Aqua{
 	desc = "A lighting fixture with cold blue lighting.";
@@ -51060,6 +51119,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/f13/building)
+"xxb" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/auto,
+/obj/machinery/power/apc/fusebox/east,
+/turf/open/floor/wood_common,
+/area/f13/legioncamp)
 "xxg" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13{
@@ -100566,13 +100630,13 @@ hne
 hne
 hne
 hne
-hne
-rrr
+vEY
+hrd
+mMT
+mjS
 ekV
 imi
-ekV
-imi
-mie
+mZG
 vwv
 fDy
 wpq
@@ -112166,10 +112230,10 @@ tFV
 jqR
 imi
 rQa
-imi
-imi
-aCe
-dVe
+xxb
+bUO
+cuw
+mOf
 htk
 xxp
 imi
@@ -112419,7 +112483,7 @@ cmV
 fud
 cmV
 cmV
-cmV
+qvg
 cmV
 cmV
 bYa
@@ -112671,7 +112735,7 @@ miq
 miq
 cmV
 mFx
-mFx
+nDp
 mFx
 mFx
 aCe
@@ -114725,8 +114789,8 @@ sPy
 vZG
 vZG
 wqi
-wqi
-wqi
+cTj
+cTj
 hco
 oJv
 oJv
@@ -114977,8 +115041,8 @@ sPy
 vZG
 kvw
 wqi
-wqi
-wqi
+kAZ
+kAZ
 hco
 oJv
 oJv
