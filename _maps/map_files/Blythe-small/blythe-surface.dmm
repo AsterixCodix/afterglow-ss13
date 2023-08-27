@@ -4429,6 +4429,15 @@
 	dir = 4
 	},
 /area/f13/wasteland/legion)
+"cbb" = (
+/obj/structure/rack/shelf_metal,
+/obj/item/gun/energy/laser/pistol/revolver,
+/obj/item/gun/energy/laser/pistol/revolver,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/brotherhood/armory)
 "cbc" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -4574,6 +4583,14 @@
 	icon_state = "darkrusty"
 	},
 /area/f13/ambientlighting/building/h)
+"cdG" = (
+/obj/structure/rack/shelf_metal,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/brotherhood/armory)
 "cdJ" = (
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
@@ -4912,16 +4929,9 @@
 /turf/open/floor/wood_common,
 /area/f13/ncr)
 "clZ" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 8
-	},
-/obj/structure/rack/shelf_metal,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	dir = 10;
-	icon_state = "redmark"
-	},
-/area/f13/brotherhood/armory)
+/obj/structure/sign/warning/securearea,
+/turf/closed/wall/r_wall/rust,
+/area/f13/brotherhood/surface)
 "cma" = (
 /obj/item/clothing/shoes/combat,
 /obj/structure/closet,
@@ -4994,13 +5004,6 @@
 /obj/machinery/pool/drain,
 /turf/open/indestructible/ground/outside/road,
 /area/f13/wasteland/city)
-"cnF" = (
-/obj/effect/landmark/start/f13/Knight,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/brotherhood/armory)
 "cnG" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 1;
@@ -6478,6 +6481,14 @@
 	dir = 8
 	},
 /area/f13/building/hospital)
+"cVN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/power/apc/fusebox/north,
+/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/armory)
 "cVW" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalbottombordertop2"
@@ -6795,15 +6806,6 @@
 	},
 /turf/open/floor/wood_common,
 /area/f13/ambientlighting/building/z)
-"dew" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/brotherhood/armory)
 "deG" = (
 /obj/item/storage/trash_stack,
 /turf/open/indestructible/ground/outside/road{
@@ -7299,9 +7301,16 @@
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "dqs" = (
-/obj/structure/bookcase/random,
-/turf/open/floor/plasteel/f13/stone,
-/area/f13/brotherhood/surface)
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/structure/rack/shelf_metal,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	dir = 10;
+	icon_state = "redmark"
+	},
+/area/f13/brotherhood/armory)
 "dqw" = (
 /obj/structure/fence{
 	dir = 4
@@ -7500,13 +7509,10 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/building)
 "dwn" = (
-/obj/structure/rack/shelf_metal,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	dir = 10;
-	icon_state = "redmark"
-	},
-/area/f13/brotherhood/armory)
+/obj/structure/sign/departments/medbay,
+/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
+/turf/closed/wall/r_wall,
+/area/f13/brotherhood/medical)
 "dwz" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/road{
@@ -8713,8 +8719,6 @@
 /obj/item/gun/energy/laser/pistol,
 /obj/item/gun/energy/laser/pistol,
 /obj/item/gun/energy/laser/pistol,
-/obj/item/gun/energy/laser/pistol/revolver,
-/obj/item/gun/energy/laser/pistol/revolver,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	dir = 10;
@@ -9261,6 +9265,15 @@
 	icon_state = "verticalinnermain1"
 	},
 /area/f13/ncr_main)
+"erH" = (
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/armory)
 "erN" = (
 /obj/machinery/door/poddoor/gate/preopen{
 	id = 335
@@ -9308,17 +9321,6 @@
 /obj/structure/simple_door/house,
 /turf/open/floor/plasteel/f13/vault_floor/white,
 /area/f13/building/mall)
-"etj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/bookcase/manuals/research_and_development{
-	allowed_books = list(/obj/item/book,/obj/item/book,/obj/item/storage/book,/obj/item/book,/obj/item/book,/obj/item/book);
-	desc = "A collection of scrolls, archives and relics.";
-	name = "Brotherhood Historical Archives"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/stone,
-/area/f13/brotherhood/surface)
 "etx" = (
 /obj/item/bedsheet,
 /obj/structure/bed/old,
@@ -12684,11 +12686,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/tequila,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/bar)
-"fUG" = (
-/obj/structure/sign/departments/medbay,
-/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
-/turf/closed/wall/r_wall,
-/area/f13/brotherhood/medical)
 "fUY" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -18987,6 +18984,15 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/building)
+"iLH" = (
+/obj/structure/flora/twig,
+/obj/structure/fence{
+	dir = 8;
+	max_integrity = 900;
+	name = "reinforced fence"
+	},
+/turf/open/indestructible/ground/outside/grass,
+/area/f13/wasteland)
 "iLJ" = (
 /turf/open/indestructible/ground/outside/sidewalkdirt/dark/corner/outer/alt,
 /area/f13/wasteland/city)
@@ -19000,6 +19006,10 @@
 	},
 /turf/open/indestructible/ground/outside/grass,
 /area/f13/ambientlighting/building/j)
+"iMm" = (
+/obj/structure/bookcase/random,
+/turf/open/floor/plasteel/f13/stone,
+/area/f13/brotherhood/surface)
 "iMq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/bed,
@@ -24322,12 +24332,6 @@
 /obj/structure/simple_door/metal/fence/wooden,
 /turf/open/indestructible/ground/outside/grass,
 /area/f13/wasteland/town)
-"lfn" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
-/turf/open/floor/f13{
-	icon_state = "rampdowntop"
-	},
-/area/f13/brotherhood/operating)
 "lfq" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -24747,6 +24751,13 @@
 /obj/effect/spawner/lootdrop/cig_packs,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/ambientlighting/building/o)
+"lqZ" = (
+/obj/effect/landmark/start/f13/Knight,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13{
+	icon_state = "reddirtyfull"
+	},
+/area/f13/brotherhood/armory)
 "lra" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/ghoul,
@@ -26932,14 +26943,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood_mosaic,
 /area/engine/workshop)
-"mlS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/apc/fusebox/north,
-/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
-	},
-/area/f13/brotherhood/armory)
 "mmb" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/road{
@@ -27222,6 +27225,17 @@
 	dir = 4
 	},
 /area/f13/building/mall)
+"mto" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bookcase/manuals/research_and_development{
+	allowed_books = list(/obj/item/book,/obj/item/book,/obj/item/storage/book,/obj/item/book,/obj/item/book,/obj/item/book);
+	desc = "A collection of scrolls, archives and relics.";
+	name = "Brotherhood Historical Archives"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/stone,
+/area/f13/brotherhood/surface)
 "mtq" = (
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
@@ -33276,10 +33290,6 @@
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/grass,
 /area/f13/wasteland)
-"pgW" = (
-/obj/structure/sign/warning/securearea,
-/turf/closed/wall/r_wall/rust,
-/area/f13/brotherhood/surface)
 "phj" = (
 /obj/structure/chair/sofa{
 	color = "#475340"
@@ -37703,6 +37713,12 @@
 	icon_state = "horizontaloutermain0"
 	},
 /area/f13/wasteland)
+"rhh" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "whitedirtysolid"
+	},
+/area/f13/brotherhood/operating)
 "rhj" = (
 /obj/item/ammo_casing/c9mm,
 /turf/open/indestructible/ground/outside/road{
@@ -40384,15 +40400,6 @@
 	},
 /turf/open/floor/wood_common,
 /area/f13/ncr)
-"ssb" = (
-/obj/structure/flora/twig,
-/obj/structure/fence{
-	dir = 8;
-	max_integrity = 900;
-	name = "reinforced fence"
-	},
-/turf/open/indestructible/ground/outside/grass,
-/area/f13/wasteland)
 "ssc" = (
 /mob/living/simple_animal/hostile/supermutant/nightkin,
 /turf/open/floor/plasteel/dark,
@@ -45238,12 +45245,6 @@
 	icon_state = "redmark"
 	},
 /area/f13/building)
-"uFE" = (
-/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
-	icon_state = "whitedirtysolid"
-	},
-/area/f13/brotherhood/operating)
 "uFJ" = (
 /obj/structure/ore_furnace,
 /turf/open/floor/wood_common,
@@ -47356,6 +47357,12 @@
 	icon_state = "bluedirtychess2"
 	},
 /area/f13/ambientlighting/building/k)
+"vGe" = (
+/obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
+/turf/open/floor/f13{
+	icon_state = "rampdowntop"
+	},
+/area/f13/brotherhood/operating)
 "vGl" = (
 /obj/structure/closet/crate/bin/trashbin,
 /obj/effect/mapping_helpers/network_builder/power_cable/red/auto,
@@ -103609,7 +103616,7 @@ fCR
 jHu
 cTj
 jHu
-fUG
+dwn
 wIO
 wIO
 eZf
@@ -106123,8 +106130,8 @@ sqI
 ajh
 oOs
 dyf
-lfn
-uFE
+vGe
+rhh
 bOX
 bOX
 bOX
@@ -106400,7 +106407,7 @@ kAZ
 bFY
 bFY
 kAZ
-pgW
+clZ
 esf
 esf
 lHj
@@ -107408,7 +107415,7 @@ rle
 bFY
 bFY
 kAZ
-pgW
+clZ
 xhA
 xhA
 kAZ
@@ -108160,11 +108167,11 @@ nPz
 nPz
 fZN
 lyF
-dqs
+iMm
 qHN
-etj
-dqs
-dqs
+mto
+iMm
+iMm
 noz
 qLz
 jMk
@@ -110661,9 +110668,9 @@ wIO
 wIO
 iUB
 onL
-clZ
-clZ
-clZ
+dqs
+dqs
+dqs
 yal
 yal
 yal
@@ -110914,14 +110921,14 @@ wIO
 iUB
 nMf
 uwm
-dwn
-dwn
+cdG
+cdG
 dbK
 dbK
 eyy
-dwn
+cdG
 uwm
-dew
+erH
 dbK
 lQp
 oJv
@@ -111170,10 +111177,10 @@ dbK
 dbK
 dbK
 eyy
-cnF
+lqZ
 dNJ
 dbK
-dew
+erH
 kWd
 lQp
 oJv
@@ -111425,7 +111432,7 @@ lGU
 dbK
 dbK
 dbK
-dew
+erH
 xpU
 lQp
 oJv
@@ -111443,7 +111450,7 @@ bVz
 scU
 cTy
 nBP
-ssb
+iLH
 nBP
 nBP
 nBP
@@ -111669,7 +111676,7 @@ wIO
 wIO
 tNA
 onp
-uwm
+cbb
 rLl
 efb
 dbK
@@ -111921,7 +111928,7 @@ wIO
 wIO
 lQp
 onp
-dwn
+cdG
 uwm
 qUR
 dbK
@@ -112172,7 +112179,7 @@ jMk
 wIO
 wIO
 lQp
-dew
+erH
 eyy
 dbK
 dbK
@@ -112181,7 +112188,7 @@ dbK
 dNJ
 nUh
 cyt
-mlS
+cVN
 jvG
 lQp
 oJv
@@ -114462,7 +114469,7 @@ kAZ
 bFY
 bFY
 jMk
-pgW
+clZ
 oJv
 oJv
 oJv
@@ -115470,7 +115477,7 @@ rle
 jMk
 jMk
 jMk
-pgW
+clZ
 oJv
 oJv
 oJv
