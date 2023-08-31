@@ -46,6 +46,11 @@
 /obj/machinery/hydroponics/soil,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/ncr/powered)
+"al" = (
+/turf/open/floor/plasteel/f13{
+	icon_state = "rampdowntop"
+	},
+/area/f13/ncr/powered)
 "am" = (
 /obj/machinery/light{
 	dir = 4
@@ -855,6 +860,12 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/closed/wall/mineral/wood,
 /area/f13/legioncamp)
+"dL" = (
+/obj/structure/table/wood,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "dO" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/toy/figure/cargotech,
@@ -1422,6 +1433,12 @@
 	sunlight_state = 1
 	},
 /area/f13/building/hospital)
+"gf" = (
+/obj/item/storage/money_stack{
+	pixel_x = 8
+	},
+/turf/open/floor/plasteel/f13/stone,
+/area/f13/ncr/powered)
 "gg" = (
 /obj/structure/table,
 /obj/effect/landmark/questing/item{
@@ -2286,6 +2303,14 @@
 	icon_state = "neutralrustyfull"
 	},
 /area/f13/brotherhood/powered)
+"jt" = (
+/obj/structure/chair/folding{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "jv" = (
 /obj/effect/decal/fakelattice,
 /turf/open/floor/wood_common,
@@ -2721,6 +2746,14 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
 /area/f13/brotherhood/powered)
+"le" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "lf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/trash,
@@ -3226,6 +3259,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/khanfort)
+"nf" = (
+/obj/structure/chalkboard,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "ng" = (
 /obj/structure/bookcase/manuals/engineering{
 	anchored = 1;
@@ -3977,6 +4016,17 @@
 	smooth = 1
 	},
 /area/f13/building/mall)
+"pS" = (
+/obj/item/card/id/dogtag/ncrvetranger{
+	pixel_y = 32;
+	anchored = 1;
+	name = "desert rangers";
+	desc = "A large reminder of the Desert Rangers former presence in the area."
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "pU" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
@@ -4256,6 +4306,12 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/f13/followers)
+"qU" = (
+/obj/item/flag/ncr,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "qV" = (
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -6543,6 +6599,14 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/carpet/arcade,
 /area/f13/building/mall)
+"zQ" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "rampdowntop"
+	},
+/area/f13/ncr/powered)
 "zR" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -6899,6 +6963,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/f13/building/mall)
+"Bn" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "rampdowntop"
+	},
+/area/f13/ncr/powered)
 "Bo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -8577,6 +8649,14 @@
 /obj/structure/simple_door/repaired,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel/khanfort)
+"HB" = (
+/obj/machinery/door/unpowered/secure_NCR{
+	req_access_txt = "121,132"
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "HC" = (
 /obj/structure/chair/bench{
 	dir = 1;
@@ -10316,6 +10396,11 @@
 /obj/structure/barricade/wooden/planks,
 /turf/closed/wall/f13/wood/house/broken,
 /area/engine/workshop)
+"OD" = (
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "OE" = (
 /obj/structure/table/wood,
 /obj/item/toy/plush/beeplushie{
@@ -12399,6 +12484,14 @@
 	},
 /turf/open/floor/wood_common/wood_common_light,
 /area/f13/office)
+"WM" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "WN" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowvertical"
@@ -12452,6 +12545,13 @@
 /obj/effect/validball_spawner,
 /turf/open/floor/wood_common,
 /area/f13/ambientlighting/building/j)
+"WV" = (
+/obj/structure/table,
+/obj/item/paper_bin,
+/turf/open/floor/f13{
+	icon_state = "freezerfloor"
+	},
+/area/f13/ncr/powered)
 "WW" = (
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
@@ -13705,18 +13805,18 @@ iU
 iU
 iU
 iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+sp
+sp
+sp
+sp
+sp
+sp
+sp
+sp
+sp
+sp
+sp
+sp
 iU
 Cb
 Cb
@@ -13957,18 +14057,18 @@ iU
 iU
 iU
 iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+sp
+OD
+OD
+OD
+Bn
+OD
+OD
+OD
+WM
+OD
+OD
+sp
 iU
 Cb
 Cb
@@ -14209,18 +14309,18 @@ iU
 iU
 iU
 iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+sp
+OD
+OD
+OD
+al
+OD
+jt
+jt
+jt
+jt
+OD
+sp
 iU
 Cb
 Cb
@@ -14461,18 +14561,18 @@ iU
 iU
 iU
 iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+sp
+qU
+OD
+dL
+dL
+OD
+jt
+jt
+jt
+jt
+OD
+sp
 iU
 iU
 Cb
@@ -14713,18 +14813,18 @@ iU
 iU
 iU
 iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+sp
+nf
+OD
+OD
+dL
+OD
+jt
+jt
+jt
+jt
+OD
+sp
 iU
 iU
 Cb
@@ -14965,18 +15065,18 @@ sp
 iU
 iU
 iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+sp
+pS
+OD
+OD
+dL
+OD
+jt
+jt
+jt
+jt
+OD
+sp
 iU
 iU
 Cb
@@ -15218,17 +15318,17 @@ sp
 sp
 sp
 sp
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+WV
+OD
+OD
+dL
+OD
+jt
+jt
+jt
+jt
+OD
+sp
 iU
 iU
 Cb
@@ -15470,17 +15570,17 @@ wW
 sf
 cC
 sp
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
+qU
+OD
+dL
+dL
+OD
+jt
+jt
+jt
+jt
+OD
+sp
 iU
 iU
 Cb
@@ -15721,18 +15821,18 @@ WI
 wW
 wW
 wW
+HB
+OD
+OD
+OD
+al
+OD
+jt
+jt
+jt
+jt
+OD
 sp
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
 iU
 iU
 Cb
@@ -15973,18 +16073,18 @@ GD
 wW
 wW
 wW
+HB
+OD
+OD
+OD
+zQ
+OD
+OD
+OD
+le
+OD
+OD
 sp
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
-iU
 iU
 iU
 Cb
@@ -17734,7 +17834,7 @@ iU
 iU
 iU
 Gx
-wW
+gf
 wW
 wW
 lL
