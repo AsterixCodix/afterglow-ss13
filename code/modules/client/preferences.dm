@@ -172,6 +172,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		"taste" = "something",
 		"body_model" = MALE,
 		"body_size" = RESIZE_DEFAULT_SIZE,
+		"height" = RESIZE_DEFAULT_SIZE,
+		"width" = RESIZE_DEFAULT_SIZE,
 		"color_scheme" = OLD_CHARACTER_COLORING
 		)
 
@@ -582,10 +584,12 @@ Records disabled until a use for them is found
 				dat += "<b>Tertiary Color:</b><BR>"
 				dat += "<span style='border: 1px solid #161616; background-color: #[features["mcolor3"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color3;task=input'>Change</a><BR>"
 				mutant_colors = TRUE
-
+				dat += "<b>Height:</b> <a href='?_src_=prefs;preference=height;task=input'>[features["height"]*100]%</a><br>"
+				dat += "<b>Width:</b> <a href='?_src_=prefs;preference=width;task=input'>[features["width"]*100]%</a><br>"
+			/*
 			if (CONFIG_GET(number/body_size_min) != CONFIG_GET(number/body_size_max))
 				dat += "<b>Sprite Size:</b> <a href='?_src_=prefs;preference=body_size;task=input'>[features["body_size"]*100]%</a><br>"
-
+			*/
 			if(!(NOEYES in pref_species.species_traits))
 				dat += "<h3>Eye Type</h3>"
 				dat += "</b><a style='display:block;width:100px' href='?_src_=prefs;preference=eye_type;task=input'>[eye_type]</a><BR>"
@@ -2818,7 +2822,21 @@ Records disabled until a use for them is found
 						else
 							features["body_model"] = chosengender
 					gender = chosengender
-
+				if ("height")
+					var/min = CONFIG_GET(number/body_size_min)
+					var/max = CONFIG_GET(number/body_size_max)
+					var/new_height = input(user, "Choose your desired width sprite size: ([min*100]%-[max*100]%)\nWarning: This may make your character look distorted!", "Character Preference", features["height"]*100) as num|null
+					if (new_height)
+						new_height = clamp(new_height * 0.01, 0.8, 1.2)
+						features["height"] = new_height
+				if ("width")
+					var/min = CONFIG_GET(number/body_size_min)
+					var/max = CONFIG_GET(number/body_size_max)
+					var/new_width = input(user, "Choose your desired width sprite size: ([min*100]%-[max*100]%)\nWarning: This may make your character look distorted!", "Character Preference", features["width"]*100) as num|null
+					if (new_width)
+						new_width = clamp(new_width * 0.01, 0.8, 1.2)
+						features["width"] = new_width
+				/*
 				if("body_size")
 					var/min = CONFIG_GET(number/body_size_min)
 					var/max = CONFIG_GET(number/body_size_max)
@@ -2835,7 +2853,7 @@ Records disabled until a use for them is found
 								return
 						if(dorfy != "No")
 							features["body_size"] = new_body_size
-				/*
+
 				if("tongue")
 					var/selected_custom_tongue = input(user, "Choose your desired tongue (none means your species tongue)", "Character Preference") as null|anything in GLOB.roundstart_tongues
 					if(selected_custom_tongue)
@@ -3437,6 +3455,8 @@ Records disabled until a use for them is found
 		save_character()
 
 	var/old_size = character.dna.features["body_size"]
+	var/old_height = character.dna.features["height"]
+	var/old_width = character.dna.features["width"]
 
 	character.dna.features = features.Copy()
 	character.set_species(chosen_species, icon_update = FALSE, pref_load = TRUE)
@@ -3462,7 +3482,7 @@ Records disabled until a use for them is found
 
 	character.give_genitals(TRUE) //character.update_genitals() is already called on genital.update_appearance()
 
-	character.dna.update_body_size(old_size)
+	character.dna.update_body_size(old_size, old_height, old_width)
 
 	//speech stuff
 	if(custom_tongue != "default")
