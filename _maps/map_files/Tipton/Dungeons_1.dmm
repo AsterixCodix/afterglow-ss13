@@ -990,7 +990,8 @@
 	light_color = "#ff4500";
 	light_range = 12
 	},
-/obj/effect/spawner/structure/window,
+/obj/structure/grille,
+/obj/item/shard,
 /turf/open/floor/f13,
 /area/ruin/powered)
 "bnV" = (
@@ -2431,12 +2432,16 @@
 	},
 /area/f13/tunnel)
 "cYr" = (
+/obj/item/shard,
 /mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot{
-	name = "ESC-2403";
+	name = "ESC-2402";
 	desc = "A sentry bot armed with a modified breacher shotgun and covered in thick armor plating, this one has ESC-2403 stamped onto it's chestplate and looks alot tougher than your average sentry bot.";
 	faction = list("hostile");
-	auto_fire_delay = 2;
-	health = 1000
+	auto_fire_delay = 1;
+	health = 1000;
+	extra_projectiles = 2;
+	projectiletype = /obj/item/projectile/bullet/incendiary/shotgun;
+	color = "#FFCCCB"
 	},
 /turf/open/floor/f13,
 /area/ruin/powered)
@@ -4939,6 +4944,14 @@
 /obj/effect/landmark/start/f13/vaultengineer,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/vault/reactor)
+"fOe" = (
+/obj/structure/table,
+/obj/item/clothing/suit/armor/power_armor/t45d,
+/obj/item/clothing/head/helmet/f13/power_armor/t45d,
+/turf/open/floor/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/ruin/powered)
 "fOI" = (
 /obj/structure/table,
 /obj/item/toy/cards/deck,
@@ -6140,6 +6153,20 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
+"heU" = (
+/obj/item/shard,
+/mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot{
+	name = "ESC-2400";
+	desc = "A sentry bot armed with a modified breacher shotgun and covered in thick armor plating, this one has ESC-2403 stamped onto it's chestplate and looks alot tougher than your average sentry bot.";
+	faction = list("hostile");
+	auto_fire_delay = 1;
+	health = 1000;
+	extra_projectiles = 2;
+	projectiletype = /obj/item/projectile/bullet/incendiary/shotgun;
+	color = "#FFCCCB"
+	},
+/turf/open/floor/f13,
+/area/ruin/powered)
 "hfh" = (
 /obj/structure/table,
 /turf/open/floor/f13/wood,
@@ -6414,13 +6441,8 @@
 	},
 /area/f13/tunnel)
 "hvx" = (
-/mob/living/simple_animal/hostile/securitron/sentrybot/chew{
-	faction = list("hostile");
-	emp_flags = null;
-	mob_armor = list("melee"=10,"bullet"=75,"laser"=50,"energy"=50,"bomb"=70,"bio"=100,"rad"=100,"fire"=0,"acid"=0,"wound"=0,"damage_threshold"=7);
-	health = 1250;
-	name = "big' chew-chew";
-	auto_fire_delay = 2
+/mob/living/simple_animal/hostile/securitron/sentrybot/chew/strong{
+	faction = list("hostile")
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "engine"
@@ -10109,6 +10131,20 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/redchess,
 /area/f13/vault/security)
+"lWl" = (
+/mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot{
+	name = "ESC-2403";
+	desc = "A sentry bot armed with a modified breacher shotgun and covered in thick armor plating, this one has ESC-2403 stamped onto it's chestplate and looks alot tougher than your average sentry bot.";
+	faction = list("hostile");
+	auto_fire_delay = 1;
+	health = 1000;
+	extra_projectiles = 2;
+	projectiletype = /obj/item/projectile/bullet/incendiary/shotgun;
+	color = "#FFCCCB"
+	},
+/obj/item/shard,
+/turf/open/floor/f13,
+/area/ruin/powered)
 "lWA" = (
 /mob/living/simple_animal/hostile/supermutant/nightkin/rangedmutant,
 /obj/effect/decal/cleanable/dirt,
@@ -10807,13 +10843,6 @@
 	},
 /area/f13/tunnel)
 "mQm" = (
-/mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot{
-	name = "ESC-2403";
-	desc = "A sentry bot armed with a modified breacher shotgun and covered in thick armor plating, this one has ESC-2403 stamped onto it's chestplate and looks alot tougher than your average sentry bot.";
-	faction = list("hostile");
-	auto_fire_delay = 2;
-	health = 1000
-	},
 /turf/open/floor/plating/tunnel,
 /area/ruin/powered)
 "mRG" = (
@@ -13276,6 +13305,11 @@
 "pYJ" = (
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/sewer/powered)
+"pZc" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhighcargo,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "pZS" = (
 /obj/effect/landmark/start/f13/vaultdweller,
 /turf/open/floor/plasteel/f13/vault_floor/purple/white/side{
@@ -18133,10 +18167,13 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/vault)
 "vXb" = (
-/mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot{
-	faction = list("hostile")
+/obj/machinery/light/floor{
+	light_color = "#ff4500";
+	light_range = 12
 	},
-/turf/open/floor/f13,
+/obj/structure/grille,
+/obj/item/shard,
+/turf/open/floor/plating/tunnel,
 /area/ruin/powered)
 "vXQ" = (
 /obj/machinery/computer/crew{
@@ -19668,6 +19705,20 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/vault)
+"xLF" = (
+/obj/item/shard,
+/mob/living/simple_animal/hostile/securitron/sentrybot/nsb/riot{
+	name = "ESC-2401";
+	desc = "A sentry bot armed with a modified breacher shotgun and covered in thick armor plating, this one has ESC-2403 stamped onto it's chestplate and looks alot tougher than your average sentry bot.";
+	faction = list("hostile");
+	auto_fire_delay = 1;
+	health = 1000;
+	extra_projectiles = 2;
+	projectiletype = /obj/item/projectile/bullet/incendiary/shotgun;
+	color = "#FFCCCB"
+	},
+/turf/open/floor/f13,
+/area/ruin/powered)
 "xLR" = (
 /obj/structure/door_assembly/door_assembly_eng,
 /obj/structure/barricade/wooden/crude,
@@ -30323,7 +30374,7 @@ anl
 axQ
 cRC
 bXt
-mjS
+pZc
 wqs
 wqs
 wqs
@@ -32115,7 +32166,7 @@ jow
 vCe
 lLc
 lLc
-vXb
+heU
 lLc
 lLc
 lLc
@@ -33529,7 +33580,7 @@ jow
 vCe
 lLc
 lLc
-vXb
+xLF
 lLc
 lLc
 lLc
@@ -36178,7 +36229,7 @@ jow
 qjW
 lLc
 lLc
-kFm
+vXb
 lLc
 lLc
 tHf
@@ -37829,7 +37880,7 @@ lLc
 mQm
 lLc
 lLc
-teq
+fOe
 tHf
 jow
 vCe
@@ -38400,7 +38451,7 @@ jow
 qjW
 lLc
 lLc
-kFm
+vXb
 lLc
 lLc
 tHf
@@ -38602,7 +38653,7 @@ jow
 adg
 lLc
 lLc
-cYr
+lWl
 lLc
 lLc
 tHf
@@ -40222,7 +40273,7 @@ xaK
 jow
 tmF
 jow
-cYr
+jow
 tmF
 jow
 tmu
