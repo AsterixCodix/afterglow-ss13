@@ -321,8 +321,8 @@
 	damage = 20 //it fucks
 	icon_state = "gaussstrong"
 	movement_type = FLYING | UNSTOPPABLE //stopping for nothing except its range
-	pixels_per_second = TILES_TO_PIXELS(15) //slow
-	range = 16
+	pixels_per_second = TILES_TO_PIXELS(12) //slow
+	range = 18
 
 //Alrem's plasmacaster
 /obj/item/projectile/f13plasma/plasmacaster/arlem
@@ -356,7 +356,7 @@
 
 /obj/item/projectile/beam/laser/gatling/hitscan //Gatling Laser
 	name = "laser beam"
-	damage = 16
+	damage = 15
 	armour_penetration = 0.14
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser
@@ -653,7 +653,7 @@
 	name = "rapidfire beam"
 	icon_state = "emitter"
 	damage = 15
-	armour_penetration = 0.1
+	armour_penetration = 0.12
 	hitscan = TRUE
 	muzzle_type = /obj/effect/projectile/muzzle/laser/emitter
 	tracer_type = /obj/effect/projectile/tracer/laser/emitter
